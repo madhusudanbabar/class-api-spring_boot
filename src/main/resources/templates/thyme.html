@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Thyme testing</title>
+</head>
+<body>
+
+<table style="border:solid 2px black">
+    <tbody>
+    <tr th:each="obj:${data}">
+        <td th:text="${obj.name}"></td>
+        <td th:text="${obj.stream}"></td>
+        <td th:text="${obj.grade}"></td>
+    </tr>
+    </tbody>
+</table>
+</body>
+</html>
